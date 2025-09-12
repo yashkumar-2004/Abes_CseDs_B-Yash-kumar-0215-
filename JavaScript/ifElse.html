@@ -8,13 +8,27 @@
 <body>
     <script>
         var a=10;
-        if(a%2==0){
-            document.write(`<h1> Number is even </h1>`);
+        //if(a%2==0){
+        //    document.write(`<h1> Number is even </h1>`);
 
+        //}
+        //else{
+           // document.write(`<h1> Number is odd </h1>`);
+        //}
+        var a = 10;
+        var b = 20;
+        var c =30;
+        let secondLargest;
+
+        if ((a > b && a < c) || (a > c && a < b)) {
+        secondLargest = a;
+        } else if ((b > a && b < c) || (b > c && b < a)) {
+        secondLargest = b;
+        } else {
+        secondLargest = c;
         }
-        else{
-            document.write(`<h1> Number is odd </h1>`);
-        }
+        document.write(`The second largest number is ${secondLargest}`);
+        
     </script>
 </body>
 </html>
