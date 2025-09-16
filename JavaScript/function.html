@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <style>
+        #div1{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body id="color">
+    <button onclick="red()">Red</button>
+    <button onclick="green()">Green</button>
+    <button onclick="blue()">Blue</button>
+    
+    <!-- <script>
+        function abes(){
+            document.write(`<h1> python program </h1>`);
+        }
+        abes();
+        function sum(a,b){
+            return a+b;
+        }
+        document.write(`<h4> The sum is ${sum(3,4)}</h4>`);
+        function sub(a,b){
+            return a-b;
+        }
+        document.write(`<h4> The subtraction is ${sub(3,4)}</h4>`);
+    </script> -->
+    <!-- <div id="div1">
+        <button onclick="abes()">Click</button>
+        <p id="para"></p>
+    </div> -->
+    <script>
+        //function abes(){
+            //document.querySelector('#para').innerHTML='Hello';
+
+       // }
+       function red(){
+        document.querySelector('#color').style.backgroundColor='red';
+       }
+       function green(){
+        document.querySelector('#color').style.backgroundColor='green';
+       }
+       function blue(){
+        document.querySelector('#color').style.backgroundColor='blue';
+       }
+
+    </script>
+</body>
+</html>
