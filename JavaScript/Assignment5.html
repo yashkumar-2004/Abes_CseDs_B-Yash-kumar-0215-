@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grand{
+            background-color: black;
+            height: 60%;
+            width: 60%;
+            margin-top: 70px;
+            border: 3px solid rgb(255, 85, 108);
+
+        }
+        #parent{
+            display: flex;
+            align-items: center;
+            height: 70px;
+            background-color: antiquewhite;
+            margin: 20px;
+            
+
+        }
+        
+        #parent > div {
+            margin-left: 240px;
+
+            
+        }
+        
+        #parent > div:first-child {
+            margin-left: 30px; 
+        }
+        img{
+            border-radius: 16px;
+        }
+        .div1{
+            background-color: rgb(167, 239, 255);
+            color: black;
+            height: 300px;
+            margin: 20px;
+
+        }
+        button{
+            height: 60px;
+            width: 60px;
+            font-size: 50px;
+            margin: 20px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <center><div class="grand">
+    <div id="parent">
+        <div id="logo"><img src="countapp copy.jpeg" height="60px" width="60px" alt=""></div>
+        <div><h2>Counter</h2></div>
+        <div><h2>App</h2></div>
+    </div>
+    <div class="div1">
+        <center><h1 id="button">0</h1></center>
+        <br>
+        <center><button onclick="plus()">+</button> <button onclick="minus()">-</button></center>
+        
+    </div>
+</div> </center>
+    
+    <script>
+        let count=0;
+        function plus(){
+            count++;
+            if(count<=10){
+                document.querySelector('#button').innerText= count;
+            }
+            else{
+                alert('max limit');
+            }
+        }
+
+        function minus(){
+            if(count<=0){
+                alert('Min limit');
+            }
+            else{
+                count--;
+                document.querySelector('#button').innerText= count;
+            }
+        }
+    </script>
+</body>
+    
+</html>
