@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+    height: 500px;
+    width: 700px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.card1, .card2 {
+    height: 300px;
+    width: 300px;
+    background-color: #ffffff;   
+    margin: 0 15px;
+    border: 3px solid #1e3c72;   
+    border-radius: 20px;
+    color: #1e3c72;              
+    font-weight: bold;
+}
+
+        
+        
+    </style>
+</head>
+<body>
+    <center><div class="main">
+        <div class="card1">
+            <div id="div1"></div>
+            <br>
+            <div id="div2"></div>
+            <br>
+            <div id="div3"></div>
+
+        </div>
+        <div class="card2">
+            <div id="div4"></div>
+            <br>
+            <div id="div5"></div>
+        </div>
+        
+    </div></center>
+    <script>
+        const student1 = new Object({
+            name : "yash",
+            class : "btech",
+            branch : "Cse",
+            Rollno : "123"
+        })
+        const student2 = new Object({
+            name : "vivek",
+            class : "btech",
+            branch : "Cse",
+            Rollno : "133"
+        })
+        const student3 = new Object({
+            name : "udbhav",
+            class : "btech",
+            branch : "Cse",
+            Rollno : "143"
+        })
+        const student4 = new Object({
+            name : "vaibhav",
+            class : "btech",
+            branch : "Cse",
+            Rollno : "153"
+        })
+        const student5 = new Object({
+            name : "mihir",
+            class : "btech",
+            branch : "Cse",
+            Rollno : "163"
+        })
+        document.querySelector('#div1').innerHTML =
+  "Name: " + student1.name + "<br>" +
+  "Class: " + student1.class + "<br>" +
+  "Branch: " + student1.branch + "<br>" +
+  "Roll No: " + student1.Rollno;
+document.querySelector('#div2').innerHTML =
+  "Name: " + student2.name + "<br>" +
+  "Class: " + student2.class + "<br>" +
+  "Branch: " + student2.branch + "<br>" +
+  "Roll No: " + student2.Rollno;
+  document.querySelector('#div3').innerHTML =
+  "Name: " + student3.name + "<br>" +
+  "Class: " + student3.class + "<br>" +
+  "Branch: " + student3.branch + "<br>" +
+  "Roll No: " + student3.Rollno;
+  document.querySelector('#div4').innerHTML =
+  "Name: " + student4.name + "<br>" +
+  "Class: " + student4.class + "<br>" +
+  "Branch: " + student4.branch + "<br>" +
+  "Roll No: " + student4.Rollno;
+  document.querySelector('#div5').innerHTML =
+  "Name: " + student5.name + "<br>" +
+  "Class: " + student5.class + "<br>" +
+  "Branch: " + student5.branch + "<br>" +
+  "Roll No: " + student5.Rollno;
+
+
+
+    </script>
+    
+</body>
+</html>
