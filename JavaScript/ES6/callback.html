@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrow Function</title>
+    <title>Callback</title>
 </head>
 <body>
     <script>
-       
-        
-        function multiply(a,b=1){
-            return a*b;
-        }
-        document.write(multiply(5));
+        function sum(a,b){
+        console.log(a+b);
+      }
+      function cal(a,b,sumcallback){
+        sumcallback(a,b);
+      }
+      cal(10,20,sum);
+
+    
+    
     </script>
 </body>
 </html>
